@@ -5,10 +5,13 @@
 > ### 初始化：
 
 ```cpp
-std::vector<int> vec; 
-std::vector<int> vec(10); 
-std::vector<int> vec(10, 1); 
-std::vector<int> vec{0, 1, 2, 3, 4, 5}; 
+#include <vector>
+using namespace std;
+
+vector<int> vec; 
+vector<int> vec(10); 
+vector<int> vec(10, 1); 
+vector<int> vec{0, 1, 2, 3, 4, 5}; 
 ```
 
 > ### 添加元素：
@@ -49,10 +52,13 @@ vec.reserve(30);
 > ### 初始化：
 
 ```cpp
-std::vector<int> vec; // 初始化
-std::vector<int> vec(10); // 指定大小為10
-std::vector<int> vec(10, 1); // 指定大小為10且初始值為1
-std::vector<int> vec{1, 2, 3, 4, 5}; // 初始化且初始值為1 2 3 4 5
+#include <vector>
+using namespace std;
+
+vector<int> vec; // 初始化
+vector<int> vec(10); // 指定大小為10
+vector<int> vec(10, 1); // 指定大小為10且初始值為1
+vector<int> vec{1, 2, 3, 4, 5}; // 初始化且初始值為1 2 3 4 5
 ```
 
 > ### 添加元素：
