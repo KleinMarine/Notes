@@ -45,6 +45,7 @@ vec.size();
 vec.empty();
 vec.resize(20);
 vec.reserve(30);
+accumulate(vec.begin(), vec.end(), 0);
 ```
   
 ## 詳細
@@ -94,6 +95,7 @@ vec.size(); //獲取元素個數
 vec.empty(); //vector是否為空
 vec.resize(5); // 改變大小為 5
 vec.reserve(30); // 預留容量為 30
+accumulate(vec.begin(), vec.end(), 0); //從vec.begin()開始累加vec的元素直到vec.end()，初始值為0
 ```
 
 
