@@ -46,6 +46,13 @@ vec.empty();
 vec.resize(20);
 vec.reserve(30);
 accumulate(vec.begin(), vec.end(), 0);
+
+auto iter = find(vec.begin(), vec.end(), data);
+if (iter != vec.end()){
+  cout << "Found " << *it << " index: " << distance(vec.begin(), iter) << endl;
+}else{
+  cout << "Not Found";
+}
 ```
   
 ## 詳細
@@ -96,6 +103,13 @@ vec.empty(); //vector是否為空
 vec.resize(5); // 改變大小為 5
 vec.reserve(30); // 預留容量為 30
 accumulate(vec.begin(), vec.end(), 0); //從vec.begin()開始累加vec的元素直到vec.end()，初始值為0
+
+auto iter = find(vec.begin(), vec.end(), data); //在vec中尋找是否有data
+if (iter != vec.end()){
+  cout << "Found " << *it << " index: " << distance(vec.begin(), iter) << endl; //找到了印出元素以及元素位置
+}else{
+  cout << "Not Found"; //沒找到
+}
 ```
 
 
