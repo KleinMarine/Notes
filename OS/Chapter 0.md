@@ -64,3 +64,43 @@
     - 存取local memory較快
     - 連接remote memory較慢
     - 規模較大，且講究效能
+
+### Distributed System ###
+
+- loosely coupled system
+    - 透過網路
+    - 每個processor都有local memory
+- 目的
+    - resource sharing
+    - load sharing
+    - reliability
+- 架構
+
+#### client-server ####
+
+![image](https://github.com/user-attachments/assets/3fc6cfa8-ddd9-47c2-936a-4ea85b1d87e8)
+- server故障，系統無法運作
+
+#### peer-to-peer ####
+![image](https://github.com/user-attachments/assets/8e53e9e0-f562-46f9-958d-088d0dfe414e)
+- 透過internet連接
+
+#### Clustered Systems：叢集電腦 ####
+- 透過LAN，所以速度很快
+    - LAN：local area network，位置很近，例如一個機房內
+
+## Special-purpose Systems ##
+Real-Time systems：在deadline前做完
+
+### Soft real-time requirements ###
+
+- 盡量在deadline前做完，沒做完不會怎樣
+- 有priority
+    - 例如影片串流，收訊不好時只有框
+
+### Hard real-time requirements ###
+
+- deadline前沒做完，會有嚴重後果
+- 盡量放在memory，讀取速度較快
+    - 不放在Secondary storage，像是hard drive
+- 例如：汽車 (剎車失誤)
